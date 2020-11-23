@@ -1,0 +1,12 @@
+server:
+  port:  8090
+spring:
+  cloud:
+    config:
+      server:
+        profile: test
+        git:
+          uri:  https://github.com/greenlearner01/cloud-config-props
+          #https://github.com/manu123456789manu/cloud-config-props.git
+      label:  master
+      name:  config-server
