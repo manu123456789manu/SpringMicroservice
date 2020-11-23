@@ -1,0 +1,19 @@
+server:
+  port: 8077
+
+spring:
+  application:
+    name: openfeign
+
+feign:
+  client:
+    config:
+      default:
+        readTimeout:  1500
+        connectTimeout:  500
+
+service:
+  base:
+    url:  http://localhost:8082/
+  name:  feignUserService
+ 
